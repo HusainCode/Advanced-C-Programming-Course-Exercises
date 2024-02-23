@@ -1,0 +1,3 @@
+C:/Users/bsk14/OneDrive/Documents/King Of The Software Engineers/C Fruit/Advanced C Programming Course Exercises/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/bsk14/OneDrive/Documents/King Of The Software Engineers/C Fruit/Advanced C Programming Course Exercises/cmake-build-debug/CMakeFiles/Advanced_C_Programming_Course_Exercises.dir
+C:/Users/bsk14/OneDrive/Documents/King Of The Software Engineers/C Fruit/Advanced C Programming Course Exercises/cmake-build-debug/CMakeFiles/edit_cache.dir

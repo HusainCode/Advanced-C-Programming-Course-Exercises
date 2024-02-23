@@ -1,0 +1,6 @@
+# ninja log v5
+1	167	7302570279798515	CMakeFiles/Advanced_C_Programming_Course_Exercises.dir/Sum.c.obj	ed4d6a8324e6960
+110	251	7303615326445409	Advanced_C_Programming_Course_Exercises.exe	bc5554cea9dc95e0
+0	109	7303615325055570	CMakeFiles/Advanced_C_Programming_Course_Exercises.dir/Variable_Length_Arrays/Challenge_1/sum_of_array.c.obj	bdb00e507abef945
+2	475	7303616440078374	build.ninja	684199aa4e35dcc8
+1	74	7303613331146545	CMakeFiles/Advanced_C_Programming_Course_Exercises.dir/Variable_Length_Arrays/sum_of_array.c.obj	a179b576867d0e8c
