@@ -1,23 +1,29 @@
-
+#include <malloc.h>
+#include <string.h>
 #include <stdio.h>
+#include <malloc.h>
 
-int main() {
-    int i, sum=0, size = 0;
-    printf("Enter size of the array: ");
-    scanf("%d", &size);
+struct myArray
+{
+    int len;
+    int array[];
+};
 
-    int arr[size];
 
-    printf("Enter %d elements in the array: ", size);
+int main()  {
+    struct myArray *m = NULL;
+    int arraySize = 0;
 
-    for(i=0; i<size; i++) {
-        scanf("%d", &arr[i]);
-    }
+    printf("Enter the size of the flexible array\n");
+    scanf("%d", &arraySize);
 
-    for(i=0; i<size; i++)    {
-        sum = sum + arr[i];
-    }
+    size_t size = sizeof(struct myArray);
+    m = malloc(size + (sizeof(int) * arraySize));
 
-    printf(“\nSum of all elements of array = %d”, sum);
+    m->len = arraySize;
+    m->array[0] = 55;
+    m->array[1] = 199;
+
+    printf("array is: %d:%d\n", m->array[0], m->array[1]);
     return 0;
 }
