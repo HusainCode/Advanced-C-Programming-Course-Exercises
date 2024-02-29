@@ -2,19 +2,20 @@
  * Challenge 1: Flexible Array Members
  * Author: Husain Alshaikhahmed
  * Description:
- * Date:
- */
-
-/*
-1- Write a program that uses a flexible array member inside a structure.
-2- Create a structure named MyArray that has a length member and a flexible
-array member named array.
+ * 1- Write a program that uses a flexible array member inside a structure.
+  2- Create a structure named MyArray that has a length member and a flexible
+ array member named array.
 3- Read in from the user the size of the array at
 runtime.
 4- Allocate memory for the structure based on this size read in from
 the user.
 5- Set the length member and fill the array with some dummy data.
 6-Print the array elements.
+ * Date:
+ */
+
+/*
+
   */
 
 #include <malloc.h>
@@ -56,6 +57,27 @@ int main() {
     scanf("%d", &size);
 
     myInstance = malloc(sizeof(struct myArray) + size * sizeof(int));
+
+
+
+    if (myInstance == NULL) {
+        printf("Memory allocation failed\n");
+        return 1; // Exit if memory allocation fails
+    }
+
+    myInstance->length = size;
+
+    // Fill the array with random numbers
+    fillArrayWithRandomNumbers(myInstance->arry, size);
+
+    // Print the array elements
+    printf("Array elements: ");
+    for (size_t i = 0; i < size; i++) {
+        printf("%d ", myInstance->arry[i]);
+    }
+    printf("\n");
+
+    free(myInstance); // free the allocated memory
 
     return 0;
 }
