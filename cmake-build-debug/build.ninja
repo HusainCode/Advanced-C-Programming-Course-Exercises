@@ -61,11 +61,11 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_Advanced_C_Programming_Course_Exercises: phony || CMakeFiles/Advanced_C_Programming_Course_Exercises.dir
 
-build CMakeFiles/Advanced_C_Programming_Course_Exercises.dir/Variable_Length_Arrays/sum_of_array.c.obj: C_COMPILER__Advanced_C_Programming_Course_Exercises_Debug C$:/Users/bsk14/OneDrive/Documents/King$ Of$ The$ Software$ Engineers/C$ Fruit/Advanced$ C$ Programming$ Course$ Exercises/Variable$ Length$ Arrays/sum_of_array.c || cmake_object_order_depends_target_Advanced_C_Programming_Course_Exercises
-  DEP_FILE = CMakeFiles\Advanced_C_Programming_Course_Exercises.dir\Variable_Length_Arrays\sum_of_array.c.obj.d
+build CMakeFiles/Advanced_C_Programming_Course_Exercises.dir/Challenge_1/Variable_Length_Arrays/sum_of_array.c.obj: C_COMPILER__Advanced_C_Programming_Course_Exercises_Debug C$:/Users/bsk14/OneDrive/Documents/King$ Of$ The$ Software$ Engineers/C$ Fruit/Advanced$ C$ Programming$ Course$ Exercises/Challenge$ 1/Variable$ Length$ Arrays/sum_of_array.c || cmake_object_order_depends_target_Advanced_C_Programming_Course_Exercises
+  DEP_FILE = CMakeFiles\Advanced_C_Programming_Course_Exercises.dir\Challenge_1\Variable_Length_Arrays\sum_of_array.c.obj.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles\Advanced_C_Programming_Course_Exercises.dir
-  OBJECT_FILE_DIR = CMakeFiles\Advanced_C_Programming_Course_Exercises.dir\Variable_Length_Arrays
+  OBJECT_FILE_DIR = CMakeFiles\Advanced_C_Programming_Course_Exercises.dir\Challenge_1\Variable_Length_Arrays
 
 
 # =============================================================================
@@ -75,7 +75,7 @@ build CMakeFiles/Advanced_C_Programming_Course_Exercises.dir/Variable_Length_Arr
 #############################################
 # Link the executable Advanced_C_Programming_Course_Exercises.exe
 
-build Advanced_C_Programming_Course_Exercises.exe: C_EXECUTABLE_LINKER__Advanced_C_Programming_Course_Exercises_Debug CMakeFiles/Advanced_C_Programming_Course_Exercises.dir/Variable_Length_Arrays/sum_of_array.c.obj
+build Advanced_C_Programming_Course_Exercises.exe: C_EXECUTABLE_LINKER__Advanced_C_Programming_Course_Exercises_Debug CMakeFiles/Advanced_C_Programming_Course_Exercises.dir/Challenge_1/Variable_Length_Arrays/sum_of_array.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Advanced_C_Programming_Course_Exercises.dir

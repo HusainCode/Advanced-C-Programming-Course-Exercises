@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 7,
 				"parent" : 0
 			}
 		]
@@ -44,7 +44,7 @@
 			"language" : "C",
 			"sourceIndexes" : 
 			[
-				4
+				0
 			]
 		}
 	],
@@ -78,20 +78,10 @@
 	"sourceGroups" : 
 	[
 		{
-			"name" : "",
-			"sourceIndexes" : 
-			[
-				0,
-				1,
-				2,
-				3
-			]
-		},
-		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				4
+				0
 			]
 		}
 	],
@@ -99,29 +89,9 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : ".idea/.gitignore",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : ".idea/Advanced C Programming Course Exercises.iml",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : ".idea/modules.xml",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : ".idea/workspace.xml",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Variable Length Arrays/sum_of_array.c",
-			"sourceGroupIndex" : 1
+			"path" : "Challenge 1/Variable Length Arrays/sum_of_array.c",
+			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "EXECUTABLE"

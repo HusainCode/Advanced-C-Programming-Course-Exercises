@@ -3,9 +3,6 @@ project(Advanced_C_Programming_Course_Exercises)
 
 set(CMAKE_CXX_STANDARD 14)
 
+# Assuming sum_of_array.c is your main C source file
 add_executable(Advanced_C_Programming_Course_Exercises
-        .idea/.gitignore
-        ".idea/Advanced C Programming Course Exercises.iml"
-        .idea/modules.xml
-        .idea/workspace.xml
-        "Variable Length Arrays/sum_of_array.c")
+        "Challenge 1/Variable Length Arrays/sum_of_array.c")
