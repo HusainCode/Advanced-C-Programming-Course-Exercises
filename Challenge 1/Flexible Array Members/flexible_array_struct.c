@@ -3,7 +3,7 @@
  * Author: Husain Alshaikhahmed
  * Description: This program uses a structure with a flexible array member to dynamically handle variable sized arrays.
  * It reads the array size from the user, allocates memory , then fills the array with random numbers, and prints the array.
- * Date3/2/2024:
+ * Date:3/2/2024
  */
 
 /*
