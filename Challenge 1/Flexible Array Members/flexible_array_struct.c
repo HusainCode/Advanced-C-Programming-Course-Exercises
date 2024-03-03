@@ -1,21 +1,21 @@
 /*
  * Challenge 1: Flexible Array Members
  * Author: Husain Alshaikhahmed
- * Description:
- * 1- Write a program that uses a flexible array member inside a structure.
-  2- Create a structure named MyArray that has a length member and a flexible
- array member named array.
+ * Description: This program uses a structure with a flexible array member to dynamically handle variable sized arrays.
+ * It reads the array size from the user, allocates memory , then fills the array with random numbers, and prints the array.
+ * Date3/2/2024:
+ */
+
+/*
+1- Write a program that uses a flexible array member inside a structure.
+2- Create a structure named MyArray that has a length member and a flexible
+array member named array.
 3- Read in from the user the size of the array at
 runtime.
 4- Allocate memory for the structure based on this size read in from
 the user.
 5- Set the length member and fill the array with some dummy data.
 6-Print the array elements.
- * Date:
- */
-
-/*
-
   */
 
 #include <malloc.h>
@@ -41,50 +41,50 @@ by 1/2.
 .Instead of two allocations for one struct object, you need just 1.
 .You save the storage for one additional pointer.
 */
-void fillArrayWithRandomNumbers(int *arr, size_t size);
 struct myArray {
     int length;
-    int arry[];
-}; // end of struct
+    int array[]; // Flexible array member
+};             // end of struct
+
+void fillArrayWithRandomNumbers(int *arr, size_t size);
+void printArrayElements();
 
 int main() {
-
     // Avoid unassigned variable to prevent undefined behaviors.
     size_t size = 0;
-    struct myArray *myInstance;
+    srand(time(NULL));
 
     printf("Enter array size: ");
-    scanf("%d", &size);
+    scanf("%zu", &size);
 
-    myInstance = malloc(sizeof(struct myArray) + size * sizeof(int));
-
-
-
+    // Allocate memory for the structure and the array
+    struct myArray *myInstance =
+            malloc(sizeof(struct myArray) + size * sizeof(int));
     if (myInstance == NULL) {
-        printf("Memory allocation failed\n");
-        return 1; // Exit if memory allocation fails
+        return 1; // Memory allocation failed
     }
 
     myInstance->length = size;
+    fillArrayWithRandomNumbers(myInstance->array,
+                               myInstance->length); // Pass the array and size
 
-    // Fill the array with random numbers
-    fillArrayWithRandomNumbers(myInstance->arry, size);
+    printArrayElements(myInstance->array, myInstance->length);
 
-    // Print the array elements
-    printf("Array elements: ");
-    for (size_t i = 0; i < size; i++) {
-        printf("%d ", myInstance->arry[i]);
-    }
-    printf("\n");
-
-    free(myInstance); // free the allocated memory
+    free(myInstance); // Free the allocated memory
 
     return 0;
 }
 
-// Fills the given array with random numbers
 void fillArrayWithRandomNumbers(int *arr, size_t size) {
-    for (int i = 0; i < size; i++) {
+    for (size_t i = 0; i < size; i++) {
         arr[i] = rand() % 10; // Assign a random number (0-9) to each array element
     }
+}
+
+void printArrayElements(int *arr, size_t size) {
+    // Print the array elements
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
 }
