@@ -2,7 +2,7 @@
 
 int main() {
     int value = 18;
-    int i = 1, j, k= 0;
+     int i = 1,j, k= 0;
 
     outerLoop:
     if (i < value) {
@@ -16,7 +16,7 @@ int main() {
         }
         else {
             innerLoop2:
-            if (k != ((2 * i)))  {
+            if (k != 2 * i)  {
                 if (k == 0 || k == (2 * i) - 3) {
                     printf("*");
                 }
